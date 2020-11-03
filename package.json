@@ -4,13 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,6 +15,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "method-override": "^3.0.0",
+    "moment": "^2.29.1",
     "pg": "^8.4.2",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
