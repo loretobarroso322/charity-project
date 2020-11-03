@@ -8,7 +8,8 @@ module.exports = (sequelize, DataTypes) => {
       desc: DataTypes.TEXT,
        imgUrl: DataTypes.STRING
     }, {});
-    
+
+
   Event.init({
     title: DataTypes.STRING,
     desc: DataTypes.TEXT
@@ -16,5 +17,11 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Event',
   });
+
+  Event.associate = function(models) {
+      Event.hasMany(models.Rsvp);
+    };
+
+
   return Event;
 };
